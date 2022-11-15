@@ -1,0 +1,54 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            overflow-x: hidden;
+        }
+        .kredit,.odenilecek{
+            width: 500px;
+        }
+        .mebleg,
+        .faizDerecesi,
+        .ay {
+            width: 100%;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            margin: 10px 0;
+        }
+        input,button{
+            width: 100%;
+            border:0;
+            outline: 0;
+        }
+       .odenilecek{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-content: center;
+        padding: 20px;
+       }
+       .umumiFaizMeblegi, 
+       .ayliqOdenilecekMebleg{
+        width: 40%;
+        margin: 10px 0;
+        padding: 15px;
+        border:1px solid red;
+        border-radius: 15px;
+       }
+       .hesabla button{
+        padding: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+       }
+    

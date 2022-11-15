@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+    
+
+        <div class="kredit">
+            <div class="mebleg">
+                <input type="number" id="mebleg" placeholder="kreditin meblegi">
+            </div>
+            <div class="faizDerecesi">
+                <input min="12" max="30" type="range" id="faiz" oninput="faizVal(this.value)" onchange="faizVal(this.value)">
+                <label for="faiz" id="faizLabel">illik 23%le</label>
+            </div>
+            <div class="ay">
+                <input min="0" max="48" type="range" id="ay" oninput="ayliqVal(this.value)" onchange="ayliqVal(this.value)">
+                <label for="ay" id="ayLabel"></label>
+            </div>
+            <div class="hesabla">
+                <button onclick="hesabla()">Hesabla</button>
+            </div>
+        </div>
+    
+        <div class="odenilecek">
+            <div class="umumiFaizMeblegi">
+               <span id="faizMeblegi"></span>
+            </div>
+            <div class="ayliqOdenilecekMebleg">
+                <span id="ayliqOdenis"></span>
+            </div>
+        </div>
+    
+    
+    
+     
+    </body>
+
+    <script src="./JS/main.js"></script>
+</body>
+</html>
